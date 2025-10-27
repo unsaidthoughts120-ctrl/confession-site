@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Confess — Anonymous Message</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-pink-900 text-white flex items-center justify-center p-6">
+  <div class="max-w-2xl w-full bg-black/40 backdrop-blur-lg rounded-2xl p-6 shadow-lg">
+    <h1 class="text-3xl font-bold mb-2 text-center">💌 Send a Confession</h1>
+    <p class="text-sm text-gray-300 mb-6 text-center">Your confession will be sent anonymously to our Telegram admin.</p>
+
+    <textarea id="message" rows="6" maxlength="1000"
+      class="w-full p-3 rounded-lg bg-white/5 text-white placeholder-gray-400 resize-none"
+      placeholder="Type your confession here..."></textarea>
+
+    <div class="flex items-center justify-between mt-2 text-sm text-gray-300">
+      <span id="count">0 / 1000</span>
+    </div>
+
+    <button id="sendBtn" class="mt-4 w-full py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 transition font-medium">Send Anonymously</button>
+    <p id="status" class="text-center text-sm mt-3"></p>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
